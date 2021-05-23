@@ -1,0 +1,19 @@
+modules : 
+    1. static
+        1.images
+        2.js
+                
+    2. template 
+        1. html
+            1. index.html
+            2. visual.html
+            3. predict.html
+            4. BIG5.html
+            5. paper.html/pdf
+    3.ipynb
+        1.predict.py
+        2.app.py
+        3.viusal.py
+        4.model.py
+        5.cmp.py
+    ***                 main.ipynb
