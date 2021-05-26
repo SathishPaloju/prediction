@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link href="{{url_for('static', filename='css/k.css')}}" rel="stylesheet">
+    <link href="{{url_for('static', filename='css/j.css')}}" rel="stylesheet">
+    <link href="{{url_for('static', filename='css/linkert.css')}}" rel="stylesheet">
+    <title>Title</title>
+</head>
+<body>
+<div class="actual">
+  Value <span id="min"></span>
+</div>
+<div id="container">
+  <div class="knob" id="knob1"></div>
+  <div class="range"></div>
+  <div class="min-text">Disagree</div>
+
+  <div class="max-text">Agree</div>
+<form oninput="x.value=parseInt(myRange.value)">
+    <div class="slidecontainer" >
+  <input type="range" min="1" max="5"  class="slider" id="myRange">
+        jnjof
+        <output name="x" for="myRange"></output>
+</div>
+    </form>
+</div>
+<div class="actual">
+  Value <span id="min"></span>
+</div>
+<div id="container">
+  <div class="knob" id="knob1"></div>
+  <div class="range"></div>
+  <div class="min-text">Disagree</div>
+  <div class="middle-text">Neutral</div>
+  <div class="max-text">Agree</div>
+    <input type="range" min="1" max="5" class="knob"  id="container">
+</div>
+<div class="wrap">
+  <h1 class="likert-header">This is a Likert Scale survey</h1>
+  <form action="">
+    <label class="statement">This HTML Likert scale is easy to use.</label>
+    <ul class='likert'>
+      <li>
+        <input type="radio" name="likert" value="strong_agree">
+        <label>Strongly agree</label>
+      </li>
+      <li>
+        <input type="radio" name="likert" value="strong_agree">
+        <label>Agree</label>
+      </li>
+      <li>
+        <input type="radio" name="likert" value="strong_agree">
+        <label>Neutral</label>
+      </li>
+      <li>
+        <input type="radio" name="likert" value="disagree">
+        <label>Disagree</label>
+      </li>
+      <li>
+        <input type="radio" name="likert" value="strong_agree">
+        <label>Strongly disagree</label>
+      </li>
+    </ul>
+    <label class="statement">It's clear that this is a responsive design.</label>
+    <ul class='likert'>
+      <li>
+        <input type="radio" name="likert" value="strong_agree">
+        <label>Strongly agree</label>
+      </li>
+      <li>
+        <input type="radio" name="likert" value="strong_agree">
+        <label>Agree</label>
+      </li>
+      <li>
+        <input type="radio" name="likert" value="strong_agree">
+        <label>Neutral</label>
+      </li>
+      <li>
+        <input type="radio" name="likert" value="disagree">
+        <label>Disagree</label>
+      </li>
+      <li>
+        <input type="radio" name="likert" value="strong_agree">
+        <label>Strongly disagree</label>
+      </li>
+    </ul>
+    <label class="statement">Codepen.io is an excellent tool for prototyping.</label>
+    <ul class='likert'>
+      <li>
+        <input type="radio" name="likert" value="strong_agree">
+        <label>Strongly agree</label>
+      </li>
+      <li>
+        <input type="radio" name="likert" value="strong_agree">
+        <label>Agree</label>
+      </li>
+      <li>
+        <input type="radio" name="likert" value="strong_agree">
+        <label>Neutral</label>
+      </li>
+      <li>
+        <input type="radio" name="likert" value="disagree">
+        <label>Disagree</label>
+      </li>
+      <li>
+        <input type="radio" name="likert" value="strong_agree">
+        <label>Strongly disagree</label>
+      </li>
+    </ul>
+    <label class="statement">Pete Fecteau is incredibly smart and handsome.</label>
+    <ul class='likert'>
+      <li>
+        <input type="radio" name="likert" value="strong_agree">
+        <label>Strongly agree</label>
+      </li>
+      <li>
+        <input type="radio" name="likert" value="strong_agree">
+        <label>Agree</label>
+      </li>
+      <li>
+        <input type="radio" name="likert" value="strong_agree">
+        <label>Neutral</label>
+      </li>
+      <li>
+        <input type="radio" name="likert" value="disagree">
+        <label>Disagree</label>
+      </li>
+      <li>
+        <input type="radio" name="likert" value="strong_agree">
+        <label>Strongly disagree</label>
+      </li>
+    </ul>
+    <div class="buttons">
+      <button class="clear">Clear</button>
+      <button class="submit">Submit</button>
+    </div>
+  </form>
+</div>
+<script src="{{url_for('static', filename='js/s.js')}}"></script>
+<script src="{{url_for('static', filename='js/h.js')}}"></script>
+</body>
+
+</html>

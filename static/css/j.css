@@ -1,0 +1,92 @@
+//TO DO : add snapping
+
+var minValue = -5;
+var maxValue = 5;
+var startVal = 0;
+var value1 = startVal;
+
+var min = $("#min");
+
+var container = $("#container");
+var containerX = container.offset().left;
+var containerWidth = container.width();
+
+var knobWidth = $(".knob").outerWidth();
+var knobOffset = knobWidth / 2;
+
+Draggable.create(".knob", {
+  type: "x",
+  bounds: {
+    left: -knobOffset,
+    width: containerWidth + knobWidth
+  },
+  cursor: "pointer",
+  onDrag : updateRange
+});
+
+Draggable.create(container, {
+  bounds: container,
+  cursor: "pointer",
+  onPress: setKnob
+});
+
+var knob1 = Draggable.get("#knob1");
+
+init(startVal);
+
+function init(start1) {
+  TweenLite.set(knob1.target, { x: getPosition(start1) });
+
+  knob1.update();
+
+  updateRange();
+}
+
+function getValue(position) {
+  var ratio = position / containerWidth;
+  var value = ((maxValue - minValue) * ratio) + minValue;
+
+  return value;
+}
+
+function getPosition(value) {
+  var ratio = (value - minValue) / (maxValue - minValue);
+  var position = (ratio * containerWidth) - knobOffset;
+
+  return position;
+}
+
+function setKnob(event) {
+  if (event.target === knob1.target) return;
+
+  mouseX = this.pointerX - containerX;
+
+  var d1 = Math.abs(mouseX - knob1.x);
+
+  TweenLite.set(knob1.target, {
+    x: mouseX - knobOffset,
+    onComplete: function() { knob1.startDrag(event); }
+  });
+
+  updateRange();
+}
+
+function getRange(knob) {
+  var range = knob.x + knobOffset;
+
+  range = range < 1
+    ? 0 : range > containerWidth
+      ? containerWidth : range;
+
+  return range;
+}
+
+function updateRange () {
+  var range1 = getRange(knob1);
+
+  value1 = Math.round(getValue(range1));
+
+  TweenLite.set('.range', { x: range1, width: containerWidth - range1});
+
+  min.html(value1);
+};
