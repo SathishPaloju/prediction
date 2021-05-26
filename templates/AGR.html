@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AGR</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Aria is a business focused HTML landing page template built with Bootstrap to help you create lead generation websites for companies and their services.">
+	<meta property="og:site_name" content="" /> <!-- website name -->
+	<meta property="og:site" content="" /> <!-- website link -->
+	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+	<meta property="og:type" content="article" />
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600&display=swap&subset=latin-ext" rel="stylesheet">
+	<link href="{{url_for('static', filename='css/styles.css')}}" rel="stylesheet">
+    <link href="{{url_for('static', filename='css/fontawesome-all.css')}}" rel="stylesheet">
+    <link href="{{url_for('static', filename='css/magnific-popup.css')}}" rel="stylesheet">
+	<link href="{{url_for('static', filename='css/bootstrap.css')}}" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<!-- Favicon  -->
+    <link rel="icon" href="{{url_for('static', filename='images/header-background.jpg')}}">
+
+  <link href="{{url_for('static', filename='css/linkert.css')}}" rel="stylesheet">
+</head>
+<body>
+
+<div class="spinner-wrapper">
+  <div class="spinner">
+    <div class="bounce1"></div>
+    <div class="bounce2"></div>
+    <div class="bounce3"></div>
+  </div>
+</div>
+<!-- end of preloader -->
+<nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link page-scroll" href="/">HOME </a>
+      </li>
+    </ul>
+  </div>
+</nav> <!-- end of navbar -->
+<!-- end of navbar -->
+
+<div class="wrap">
+  <h1 class="likert-header"></h1>
+  <form action="">
+    <label class="statement">3.1 I feel little concern for others.</label>
+    <ul class='likert'>
+      <li>
+        <input type="radio" name="AGR1" value="5">
+        <label>Strongly agree</label>
+      </li>
+      <li>
+        <input type="radio" name="AGR1" value="4">
+        <label>Agree</label>
+      </li>
+      <li>
+        <input type="radio" name="AGR1" value="3">
+        <label>Neutral</label>
+      </li>
+      <li>
+        <input type="radio" name="AGR1" value="2">
+        <label>Disagree</label>
+      </li>
+      <li>
+        <input type="radio" name="AGR1" value="1">
+        <label>Strongly disagree</label>
+      </li>
+    </ul>
+
+    <label class="statement">3.2 I am interested in people.</label>
+    <ul class='likert'>
+      <li>
+        <input type="radio" name="AGR2" value="5">
+        <label>Strongly agree</label>
+      </li>
+      <li>
+        <input type="radio" name="AGR2" value="4">
+        <label>Agree</label>
+      </li>
+      <li>
+        <input type="radio" name="AGR2" value="3">
+        <label>Neutral</label>
+      </li>
+      <li>
+        <input type="radio" name="AGR2" value="2">
+        <label>Disagree</label>
+      </li>
+      <li>
+        <input type="radio" name="AGR2" value="1">
+        <label>Strongly disagree</label>
+      </li>
+    </ul>
+    <label class="statement">3.3 I insult people.</label>
+    <ul class='likert'>
+      <li>
+        <input type="radio" name="AGR3" value="5">
+        <label>Strongly agree</label>
+      </li>
+      <li>
+        <input type="radio" name="AGR3" value="4">
+        <label>Agree</label>
+      </li>
+      <li>
+        <input type="radio" name="AGR3" value="3">
+        <label>Neutral</label>
+      </li>
+      <li>
+        <input type="radio" name="AGR3" value="2">
+        <label>Disagree</label>
+      </li>
+      <li>
+        <input type="radio" name="AGR3" value="1">
+        <label>Strongly disagree</label>
+      </li>
+    </ul>
+    <label class="statement">3.4 I sympathize with others' feelings.</label>
+    <ul class='likert'>
+      <li>
+        <input type="radio" name="AGR4" value="5">
+        <label>Strongly agree</label>
+      </li>
+      <li>
+        <input type="radio" name="AGR4" value="4">
+        <label>Agree</label>
+      </li>
+      <li>
+        <input type="radio" name="AGR4" value="3">
+        <label>Neutral</label>
+      </li>
+      <li>
+        <input type="radio" name="AGR4" value="2">
+        <label>Disagree</label>
+      </li>
+      <li>
+        <input type="radio" name="AGR4" value="1">
+        <label>Strongly disagree</label>
+      </li>
+    </ul>
+     <label class="statement">3.5 I am not interested in other people's problems.</label>
+    <ul class='likert'>
+      <li>
+        <input type="radio" name="AGR5" value="5">
+        <label>Strongly agree</label>
+      </li>
+      <li>
+        <input type="radio" name="AGR5" value="4">
+        <label>Agree</label>
+      </li>
+      <li>
+        <input type="radio" name="AGR5" value="3">
+        <label>Neutral</label>
+      </li>
+      <li>
+        <input type="radio" name="AGR5" value="2">
+        <label>Disagree</label>
+      </li>
+      <li>
+        <input type="radio" name="AGR5" value="1">
+        <label>Strongly disagree</label>
+      </li>
+    </ul>
+     <label class="statement">3.6 I have a soft heart. </label>
+    <ul class='likert'>
+      <li>
+        <input type="radio" name="AGR6" value="5">
+        <label>Strongly agree</label>
+      </li>
+      <li>
+        <input type="radio" name="AGR6" value="4">
+        <label>Agree</label>
+      </li>
+      <li>
+        <input type="radio" name="AGR6" value="3">
+        <label>Neutral</label>
+      </li>
+      <li>
+        <input type="radio" name="AGR6" value="2">
+        <label>Disagree</label>
+      </li>
+      <li>
+        <input type="radio" name="AGR6" value="1">
+        <label>Strongly disagree</label>
+      </li>
+    </ul>
+     <label class="statement">3.7 I am not really interested in others.</label>
+    <ul class='likert'>
+      <li>
+        <input type="radio" name="AGR7" value="5">
+        <label>Strongly agree</label>
+      </li>
+      <li>
+        <input type="radio" name="AGR7" value="4">
+        <label>Agree</label>
+      </li>
+      <li>
+        <input type="radio" name="AGR7" value="3">
+        <label>Neutral</label>
+      </li>
+      <li>
+        <input type="radio" name="AGR7" value="2">
+        <label>Disagree</label>
+      </li>
+      <li>
+        <input type="radio" name="AGR7" value="1">
+        <label>Strongly disagree</label>
+      </li>
+    </ul>
+    <label class="statement">3.8 I take time out for others.</label>
+    <ul class='likert'>
+      <li>
+        <input type="radio" name="AGR8" value="5">
+        <label>Strongly agree</label>
+      </li>
+      <li>
+        <input type="radio" name="AGR8" value="4">
+        <label>Agree</label>
+      </li>
+      <li>
+        <input type="radio" name="AGR8" value="3">
+        <label>Neutral</label>
+      </li>
+      <li>
+        <input type="radio" name="AGR8" value="2">
+        <label>Disagree</label>
+      </li>
+      <li>
+        <input type="radio" name="AGR8" value="1">
+        <label>Strongly disagree</label>
+      </li>
+    </ul>
+    <label class="statement">3.9 I feel others' emotions.</label>
+    <ul class='likert'>
+      <li>
+        <input type="radio" name="AGR9" value="5">
+        <label>Strongly agree</label>
+      </li>
+      <li>
+        <input type="radio" name="AGR9" value="4">
+        <label>Agree</label>
+      </li>
+      <li>
+        <input type="radio" name="AGR9" value="3">
+        <label>Neutral</label>
+      </li>
+      <li>
+        <input type="radio" name="AGR9" value="2">
+        <label>Disagree</label>
+      </li>
+      <li>
+        <input type="radio" name="AGR9" value="1">
+        <label>Strongly disagree</label>
+      </li>
+    </ul>
+     <label class="statement">3.10 I make people feel at ease.</label>
+    <ul class='likert'>
+      <li>
+        <input type="radio" name="AGR10" value="5">
+        <label>Strongly agree</label>
+      </li>
+      <li>
+        <input type="radio" name="AGR10" value="4">
+        <label>Agree</label>
+      </li>
+      <li>
+        <input type="radio" name="AGR10" value="3">
+        <label>Neutral</label>
+      </li>
+      <li>
+        <input type="radio" name="AGR10" value="2">
+        <label>Disagree</label>
+      </li>
+      <li>
+        <input type="radio" name="AGR10" value="1">
+        <label>Strongly disagree</label>
+      </li>
+    </ul>
+    
+
+
+    <div class="buttons">
+      <input type="button" onclick="location.href='AGR';" value="Back" />
+      <button class="clear">Clear</button>
+      <input type="button" onclick="location.href='CSN';" value="Next" />
+    </div>
+  </form>
+</div>
+<script src="{{url_for('static', filename='js/jquery.min.js')}}"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+<script src="{{url_for('static', filename='js/popper.min.js')}}"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+<script src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+<script src="{{url_for('static', filename='js/jquery.magnific-popup.js')}}"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+<script src="{{url_for('static', filename='js/morphext.min.js')}}"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+<script src="{{url_for('static', filename='js/isotope.pkgd.min.js')}}"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+<script src="{{url_for('static', filename='js/validator.min.js')}}"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+<script src="{{url_for('static', filename='js/scripts.js')}}"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+<script src="{{url_for('static', filename='js/swiper.min.js')}}"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+
+</body>
+</html>
