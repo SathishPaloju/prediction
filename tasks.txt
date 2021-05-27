@@ -1,2 +1,9 @@
 1.app.py
 2.predict.html to be cmplted by 2 marow 27-04-21
+
+3.app.py
+4.visualize
+5.UML
+6.ppt
+7.0 data analysis
+7.docu
