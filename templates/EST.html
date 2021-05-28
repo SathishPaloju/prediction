@@ -51,7 +51,7 @@
 
 <div class="wrap">
   <h1 class="likert-header"></h1>
-  <form action="">
+  <form data-toggle="validator" data-focus="true" action="{{ url_for('EST') }}" method="POST">
     <label class="statement">2.1 I get stressed out easily.</label>
     <ul class='likert'>
       <li>
@@ -287,9 +287,10 @@
 
 
    <div class="buttons">
-      <input type="button" onclick="location.href='EXT';" value="Back" />
+      <input type="submit"  value="Back" onclick="location.href='EXT';" />
       <button class="clear">Clear</button>
-      <input type="button" onclick="location.href='AGR';" value="Next" />
+      <input type="submit"   href="EST.html" value="Next" />
+
     </div>
   </form>
 </div>

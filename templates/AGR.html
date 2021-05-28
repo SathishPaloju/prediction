@@ -51,27 +51,27 @@
 
 <div class="wrap">
   <h1 class="likert-header"></h1>
-  <form action="">
+  <form data-toggle="validator" data-focus="true" action="{{ url_for('AGR') }}" name="agr" method="POST">
     <label class="statement">3.1 I feel little concern for others.</label>
     <ul class='likert'>
       <li>
-        <input type="radio" name="AGR1" value="5">
+        <input type="radio" name="AGR1" value="5" placeholder="AGR1" oninput="this.className = ''">
         <label>Strongly agree</label>
       </li>
       <li>
-        <input type="radio" name="AGR1" value="4">
+        <input type="radio" name="AGR1" value="4" placeholder="AGR1" oninput="this.className = ''">
         <label>Agree</label>
       </li>
       <li>
-        <input type="radio" name="AGR1" value="3">
+        <input type="radio" name="AGR1" value="3" placeholder="AGR1" oninput="this.className = ''" >
         <label>Neutral</label>
       </li>
       <li>
-        <input type="radio" name="AGR1" value="2">
+        <input type="radio" name="AGR1" value="2" placeholder="AGR1" oninput="this.className = ''">
         <label>Disagree</label>
       </li>
       <li>
-        <input type="radio" name="AGR1" value="1">
+        <input type="radio" name="AGR1" value="1" placeholder="AGR1" oninput="this.className = ''" >
         <label>Strongly disagree</label>
       </li>
     </ul>
@@ -79,218 +79,217 @@
     <label class="statement">3.2 I am interested in people.</label>
     <ul class='likert'>
       <li>
-        <input type="radio" name="AGR2" value="5">
+        <input type="radio" name="AGR2" value="5" placeholder="AGR2" oninput="this.className = ''">
         <label>Strongly agree</label>
       </li>
       <li>
-        <input type="radio" name="AGR2" value="4">
+        <input type="radio" name="AGR2" value="4" placeholder="AGR2" oninput="this.className = ''">
         <label>Agree</label>
       </li>
       <li>
-        <input type="radio" name="AGR2" value="3">
+        <input type="radio" name="AGR2" value="3" placeholder="AGR2" oninput="this.className = ''">
         <label>Neutral</label>
       </li>
       <li>
-        <input type="radio" name="AGR2" value="2">
+        <input type="radio" name="AGR2" value="2" placeholder="AGR2" oninput="this.className = ''">
         <label>Disagree</label>
       </li>
       <li>
-        <input type="radio" name="AGR2" value="1">
+        <input type="radio" name="AGR2" value="1" placeholder="AGR2" oninput="this.className = ''">
         <label>Strongly disagree</label>
       </li>
     </ul>
-    <label class="statement">3.3 I insult people.</label>
+    <label class="statement">3.3 I insult people.</label >
     <ul class='likert'>
       <li>
-        <input type="radio" name="AGR3" value="5">
+        <input type="radio" name="AGR3" value="5" placeholder="AGR3" oninput="this.className = ''">
         <label>Strongly agree</label>
       </li>
       <li>
-        <input type="radio" name="AGR3" value="4">
+        <input type="radio" name="AGR3" value="4" placeholder="AGR3" oninput="this.className = ''" >
         <label>Agree</label>
       </li>
       <li>
-        <input type="radio" name="AGR3" value="3">
+        <input type="radio" name="AGR3" value="3" placeholder="AGR3" oninput="this.className = ''">
         <label>Neutral</label>
       </li>
       <li>
-        <input type="radio" name="AGR3" value="2">
+        <input type="radio" name="AGR3" value="2" placeholder="AGR3" oninput="this.className = ''" >
         <label>Disagree</label>
       </li>
       <li>
-        <input type="radio" name="AGR3" value="1">
+        <input type="radio" name="AGR3" value="1" placeholder="AGR3" oninput="this.className = ''">
         <label>Strongly disagree</label>
       </li>
     </ul>
     <label class="statement">3.4 I sympathize with others' feelings.</label>
     <ul class='likert'>
       <li>
-        <input type="radio" name="AGR4" value="5">
+        <input type="radio" name="AGR4" value="5" placeholder="AGR4" oninput="this.className = ''">
         <label>Strongly agree</label>
       </li>
       <li>
-        <input type="radio" name="AGR4" value="4">
+        <input type="radio" name="AGR4" value="4" placeholder="AGR4" oninput="this.className = ''">
         <label>Agree</label>
       </li>
       <li>
-        <input type="radio" name="AGR4" value="3">
+        <input type="radio" name="AGR4" value="3" placeholder="AGR4" oninput="this.className = ''">
         <label>Neutral</label>
       </li>
       <li>
-        <input type="radio" name="AGR4" value="2">
+        <input type="radio" name="AGR4" value="2" placeholder="AGR4" oninput="this.className = ''">
         <label>Disagree</label>
       </li>
       <li>
-        <input type="radio" name="AGR4" value="1">
+        <input type="radio" name="AGR4" value="1" placeholder="AGR4" oninput="this.className = ''">
         <label>Strongly disagree</label>
       </li>
     </ul>
      <label class="statement">3.5 I am not interested in other people's problems.</label>
     <ul class='likert'>
       <li>
-        <input type="radio" name="AGR5" value="5">
+        <input type="radio" name="AGR5" value="5" placeholder="AGR5" oninput="this.className = ''">
         <label>Strongly agree</label>
       </li>
       <li>
-        <input type="radio" name="AGR5" value="4">
+        <input type="radio" name="AGR5" value="4" placeholder="AGR5" oninput="this.className = ''">
         <label>Agree</label>
       </li>
       <li>
-        <input type="radio" name="AGR5" value="3">
+        <input type="radio" name="AGR5" value="3" placeholder="AGR5" oninput="this.className = ''">
         <label>Neutral</label>
       </li>
       <li>
-        <input type="radio" name="AGR5" value="2">
+        <input type="radio" name="AGR5" value="2" placeholder="AGR5" oninput="this.className = ''">
         <label>Disagree</label>
       </li>
       <li>
-        <input type="radio" name="AGR5" value="1">
+        <input type="radio" name="AGR5" value="1" placeholder="AGR5" oninput="this.className = ''">
         <label>Strongly disagree</label>
       </li>
     </ul>
      <label class="statement">3.6 I have a soft heart. </label>
     <ul class='likert'>
       <li>
-        <input type="radio" name="AGR6" value="5">
+        <input type="radio" name="AGR6" value="5" placeholder="AGR6" oninput="this.className = ''">
         <label>Strongly agree</label>
       </li>
       <li>
-        <input type="radio" name="AGR6" value="4">
+        <input type="radio" name="AGR6" value="4" placeholder="AGR6" oninput="this.className = ''">
         <label>Agree</label>
       </li>
       <li>
-        <input type="radio" name="AGR6" value="3">
+        <input type="radio" name="AGR6" value="3" placeholder="AGR6" oninput="this.className = ''">
         <label>Neutral</label>
       </li>
       <li>
-        <input type="radio" name="AGR6" value="2">
+        <input type="radio" name="AGR6" value="2" placeholder="AGR6" oninput="this.className = ''">
         <label>Disagree</label>
       </li>
       <li>
-        <input type="radio" name="AGR6" value="1">
+        <input type="radio" name="AGR6" value="1" placeholder="AGR6" oninput="this.className = ''">
         <label>Strongly disagree</label>
       </li>
     </ul>
      <label class="statement">3.7 I am not really interested in others.</label>
     <ul class='likert'>
       <li>
-        <input type="radio" name="AGR7" value="5">
+        <input type="radio" name="AGR7" value="5" placeholder="AGR7" oninput="this.className = ''">
         <label>Strongly agree</label>
       </li>
       <li>
-        <input type="radio" name="AGR7" value="4">
+        <input type="radio" name="AGR7" value="4" placeholder="AGR7" oninput="this.className = ''">
         <label>Agree</label>
       </li>
       <li>
-        <input type="radio" name="AGR7" value="3">
+        <input type="radio" name="AGR7" value="3" placeholder="AGR7" oninput="this.className = ''">
         <label>Neutral</label>
       </li>
       <li>
-        <input type="radio" name="AGR7" value="2">
+        <input type="radio" name="AGR7" value="2" placeholder="AGR7" oninput="this.className = ''">
         <label>Disagree</label>
       </li>
       <li>
-        <input type="radio" name="AGR7" value="1">
+        <input type="radio" name="AGR7" value="1" placeholder="AGR7" oninput="this.className = ''">
         <label>Strongly disagree</label>
       </li>
     </ul>
     <label class="statement">3.8 I take time out for others.</label>
     <ul class='likert'>
       <li>
-        <input type="radio" name="AGR8" value="5">
+        <input type="radio" name="AGR8" value="5" placeholder="AGR8" oninput="this.className = ''">
         <label>Strongly agree</label>
       </li>
       <li>
-        <input type="radio" name="AGR8" value="4">
+        <input type="radio" name="AGR8" value="4" placeholder="AGR8" oninput="this.className = ''">
         <label>Agree</label>
       </li>
       <li>
-        <input type="radio" name="AGR8" value="3">
+        <input type="radio" name="AGR8" value="3" placeholder="AGR8" oninput="this.className = ''">
         <label>Neutral</label>
       </li>
       <li>
-        <input type="radio" name="AGR8" value="2">
+        <input type="radio" name="AGR8" value="2" placeholder="AGR8" oninput="this.className = ''">
         <label>Disagree</label>
       </li>
       <li>
-        <input type="radio" name="AGR8" value="1">
+        <input type="radio" name="AGR8" value="1" placeholder="AGR8" oninput="this.className = ''">
         <label>Strongly disagree</label>
       </li>
     </ul>
     <label class="statement">3.9 I feel others' emotions.</label>
     <ul class='likert'>
       <li>
-        <input type="radio" name="AGR9" value="5">
+        <input type="radio" name="AGR9" value="5" placeholder="AGR9" oninput="this.className = ''">
         <label>Strongly agree</label>
       </li>
       <li>
-        <input type="radio" name="AGR9" value="4">
+        <input type="radio" name="AGR9" value="4" placeholder="AGR9" oninput="this.className = ''">
         <label>Agree</label>
       </li>
       <li>
-        <input type="radio" name="AGR9" value="3">
+        <input type="radio" name="AGR9" value="3" placeholder="AGR9" oninput="this.className = ''">
         <label>Neutral</label>
       </li>
       <li>
-        <input type="radio" name="AGR9" value="2">
+        <input type="radio" name="AGR9" value="2" placeholder="AGR9" oninput="this.className = ''">
         <label>Disagree</label>
       </li>
       <li>
-        <input type="radio" name="AGR9" value="1">
+        <input type="radio" name="AGR9" value="1" placeholder="AGR9" oninput="this.className = ''">
         <label>Strongly disagree</label>
       </li>
     </ul>
      <label class="statement">3.10 I make people feel at ease.</label>
     <ul class='likert'>
       <li>
-        <input type="radio" name="AGR10" value="5">
+        <input type="radio" name="AGR10" value="5" placeholder="AGR10" oninput="this.className = ''">
         <label>Strongly agree</label>
       </li>
       <li>
-        <input type="radio" name="AGR10" value="4">
+        <input type="radio" name="AGR10" value="4" placeholder="AGR10" oninput="this.className = ''">
         <label>Agree</label>
       </li>
       <li>
-        <input type="radio" name="AGR10" value="3">
+        <input type="radio" name="AGR10" value="3" placeholder="AGR10" oninput="this.className = ''">
         <label>Neutral</label>
       </li>
       <li>
-        <input type="radio" name="AGR10" value="2">
+        <input type="radio" name="AGR10" value="2" placeholder="AGR10" oninput="this.className = ''">
         <label>Disagree</label>
       </li>
       <li>
-        <input type="radio" name="AGR10" value="1">
+        <input type="radio" name="AGR10" value="1" placeholder="AGR10" oninput="this.className = ''">
         <label>Strongly disagree</label>
       </li>
     </ul>
-    
 
-
-    <div class="buttons">
-      <input type="button" onclick="location.href='AGR';" value="Back" />
+<div class="buttons">
+      <input type="button"  onclick="location.href='EXT';" value="Back" />
       <button class="clear">Clear</button>
-      <input type="button" onclick="location.href='CSN';" value="Next" />
+      <input ttype="submit"  onclick="location.href='CSN';" value="Next" />
     </div>
+
   </form>
 </div>
 <script src="{{url_for('static', filename='js/jquery.min.js')}}"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->

@@ -51,7 +51,7 @@
 
 <div class="wrap">
   <h1 class="likert-header"></h1>
-  <form action="">
+  <form data-toggle="validator" data-focus="true" action="{{ url_for('OPN') }}" method="POST">
     <label class="statement">5.1 I have a rich vocabulary.</label>
     <ul class='likert'>
       <li>
@@ -283,14 +283,12 @@
         <label>Strongly disagree</label>
       </li>
     </ul>
-    
 
->
 <div class="buttons">
-  <input type="button" onclick="location.href='CSN';" value="Back" />
+  <input type="submit"  onclick="location.href='CSN';" value="Back" />
   <button class="clear">Clear</button>
-  <input type="button" class="submit" onclick="location.href='result';" value="Submit"/>
-</div
+  <input type="submit"   href="OPN.html" value="Submit" />
+</div>
 </form>
 </div>
 <script src="{{url_for('static', filename='js/jquery.min.js')}}"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->

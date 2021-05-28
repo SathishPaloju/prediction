@@ -51,7 +51,7 @@
 
 <div class="wrap">
   <h1 class="likert-header"></h1>
-  <form action="">
+  <form data-toggle="validator" data-focus="true" action="{{ url_for('CSN') }}" method="POST">
     <label class="statement">4.1 I am always prepared.</label>
     <ul class='likert'>
       <li>
@@ -288,7 +288,7 @@
 <div class="buttons">
       <input type="button" onclick="location.href='AGR';" value="Back" />
       <button class="clear">Clear</button>
-      <input type="button" onclick="location.href='OPN';" value="Next" />
+      <input type="submit" onclick="location.href='OPN';" value="Next" />
     </div>
   </form>
 </div>
