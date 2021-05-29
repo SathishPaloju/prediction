@@ -50,16 +50,16 @@ AGR7 = 0
 AGR8 = 0
 AGR9 = 0
 AGR10 = 0
-CNS1 = 0
-CNS2 = 0
-CNS3 = 0
-CNS4 = 0
-CNS5 = 0
-CNS6 = 0
-CNS7 = 0
-CNS8 = 0
-CNS9 = 0
-CNS10 = 0
+CSN1 = 0
+CSN2 = 0
+CSN3 = 0
+CSN4 = 0
+CSN5 = 0
+CSN6 = 0
+CSN7 = 0
+CSN8 = 0
+CSN9 = 0
+CSN10 = 0
 OPN1 =0
 OPN2 =0
 OPN3 =0
@@ -174,16 +174,16 @@ def CSN():
     if flask.request.method == 'GET':
         return flask.render_template('CSN.html')
     if flask.request.method == 'POST':
-        CSN1 = float(flask.request.form['CNS1'])
-        CSN2 = float(flask.request.form['CNS2'])
-        CSN3 = float(flask.request.form['CNS3'])
-        CSN4 = float(flask.request.form['CNS4'])
-        CSN5 = float(flask.request.form['CNS5'])
-        CSN6 = float(flask.request.form['CNS6'])
-        CSN7 = float(flask.request.form['CNS7'])
-        CSN8 = float(flask.request.form['CNS8'])
-        CSN9 = float(flask.request.form['CNS9'])
-        CSN10 = float(flask.request.form['CNS10'])
+        CSN1 = float(flask.request.form['CSN1'])
+        CSN2 = float(flask.request.form['CSN2'])
+        CSN3 = float(flask.request.form['CSN3'])
+        CSN4 = float(flask.request.form['CSN4'])
+        CSN5 = float(flask.request.form['CSN5'])
+        CSN6 = float(flask.request.form['CSN6'])
+        CSN7 = float(flask.request.form['CSN7'])
+        CSN8 = float(flask.request.form['CSN8'])
+        CSN9 = float(flask.request.form['CSN9'])
+        CSN10 = float(flask.request.form['CSN10'])
         return flask.render_template(r'OPN.html')
 
 @app.route('/OPN',methods=['GET', 'POST'])
@@ -206,13 +206,14 @@ def OPN():
         print(EST10,EST1)
         return flask.render_template(r'OPN.html')
 
-
-@app.route('/result',methods=['GET', 'POST'])
+@app.route("/result", methods=['GET', 'POST'])
 def result():
-
-        print(OPN10)
-        return flask.render_template(r'result.html')
-
+    # flask.render_template('predict.html',title="predict ")
+    if flask.request.method == 'GET':
+        return flask.render_template('result.html')
+    if flask.request.method == 'POST':
+        result = 1
+        return flask.render_template('result.html',result=result)
 
 @app.route('/file_downloads/')
 def file_downloads():
