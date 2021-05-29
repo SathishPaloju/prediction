@@ -5,18 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="415585ea-c210-4379-96ff-6cab1eb51331" name="Default Changelist" comment="commit final_html">
-      <change afterPath="$PROJECT_DIR$/static/css/final.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/final.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/stack.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/AGR.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/AGR.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/big-five-personality-test.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipynb/.ipynb_checkpoints/big-five-personality-test-clustering-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipynb/big-five-personality-test-clustering.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/print.py" beforeDir="false" afterPath="$PROJECT_DIR$/print.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/CSN.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/CSN.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/EST.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/EST.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/EXT.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/EXT.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/OPN.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/OPN.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/result.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/result.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622206210226</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="commit final_html">
+      <created>1622206618999</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1622206618999</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="UnknownFeatures">
